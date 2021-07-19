@@ -3,8 +3,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/* 1·Î ¸¸µé±â
- * Àç±Í¹ıÀ¸·Î Ç®±â
+/* 1ë¡œ ë§Œë“¤ê¸°
+ * ì¬ê·€ë²•ìœ¼ë¡œ í’€ê¸°
  */
 
 public class baek1463 {
@@ -13,15 +13,15 @@ public class baek1463 {
 	       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	       int X = Integer.parseInt(br.readLine());
 	
-	    System.out.println("2ÀÌ»ó 1000000ÀÌÇÏÀÇ Á¤¼ö ÀÔ·Â: ");
-		// ÇØ´ç ¹è¿­ÀÇ ¿ä¼Ò°¡ ¿¬»ê È½¼ö
-		int list [] = new int[X+1]; // ¼ıÀÚ¸¦ ±×´ë·Î Ç¥ÇöÇÏ±â À§ÇÔ(¹è¿­ ÀÎµ¦½º´Â 0ºÎÅÍ ½ÃÀÛ)
-		list[0] = 0; list[1] = 0;  // 2ÀÌ»óÀÇ ¼ö ¸¸ÀÌ °è»ê ´ë»ó
+	    System.out.println("2ì´ìƒ 1000000ì´í•˜ì˜ ì •ìˆ˜ ì…ë ¥: ");
+		// í•´ë‹¹ ë°°ì—´ì˜ ìš”ì†Œê°€ ì—°ì‚° íšŸìˆ˜
+		int list [] = new int[X+1]; // ìˆ«ìë¥¼ ê·¸ëŒ€ë¡œ í‘œí˜„í•˜ê¸° ìœ„í•¨(ë°°ì—´ ì¸ë±ìŠ¤ëŠ” 0ë¶€í„° ì‹œì‘)
+		list[0] = 0; list[1] = 0;  // 2ì´ìƒì˜ ìˆ˜ ë§Œì´ ê³„ì‚° ëŒ€ìƒ
 		
 		
 		for(int i=2; i<=X; i++) {
 			
-			list[i] = list[i-1]+1;  //1À» »©´Â ¿¬»ê, ÀÌ ¿¬»ê¸¸ °è¼ÓµÇ¸é ÃÖ¾ÇÀÇ °á°ú
+			list[i] = list[i-1]+1;  //1ì„ ë¹¼ëŠ” ì—°ì‚°, ì´ ì—°ì‚°ë§Œ ê³„ì†ë˜ë©´ ìµœì•…ì˜ ê²°ê³¼
 			
 			if(i%2 == 0) list[i] = Math.min(list[i], list[i/2]+1);
 			if(i%3 == 0) list[i] = Math.min(list[i], list[i/3]+1);
