@@ -4,18 +4,18 @@ import java.util.Scanner;
 public class Baek11656 {
 
 	public static void main(String[] args) {
-		//¹®ÀÚ¿­ S ¹Ş¾Æ¿À±â
+		//ë¬¸ìì—´ S ë°›ì•„ì˜¤ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¹®ÀÚ¿­ S ÀÔ·Â(¾ËÆÄºª¼Ò¹®ÀÚ, ±æÀÌ:1000º¸´Ù ÀÛ°Å³ª °°À½) ");
+		System.out.println("ë¬¸ìì—´ S ì…ë ¥(ì•ŒíŒŒë²³ì†Œë¬¸ì, ê¸¸ì´:1000ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ìŒ) ");
 		String S = sc.next();
 		
-		//Á¢¹Ì»ç ±¸ÇÏ±â <substring>
+		//ì ‘ë¯¸ì‚¬ êµ¬í•˜ê¸° <substring>
 		String[]arrayS = new String[S.length()];
 		for(int i=0; i<arrayS.length; i++) {
 			arrayS[i] = S.substring(i, arrayS.length);
 		}
 		
-		//ÃßÃâÇÑ Á¢¹Ì»ç Á¤·ÄÇÏ±â(¾ËÆÄºª ¼ø) <sort>
+		//ì¶”ì¶œí•œ ì ‘ë¯¸ì‚¬ ì •ë ¬í•˜ê¸°(ì•ŒíŒŒë²³ ìˆœ) <sort>
 		Arrays.sort(arrayS);
 		
 		for(int i=0; i<arrayS.length; i++) {
