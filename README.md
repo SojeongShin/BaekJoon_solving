@@ -1,3 +1,5 @@
 ## BaekJoon_solving
 ## Programmers_solving
-### java 언어를 사용합니다.
+## CODE_UP
+#### java 언어를 사용합니다.
+#### Python 언어를 사용합니다.
