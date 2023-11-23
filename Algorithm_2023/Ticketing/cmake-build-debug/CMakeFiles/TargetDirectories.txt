@@ -1,0 +1,3 @@
+/Users/sojeongshin/CLionProjects/Algorithm/Ticketing/cmake-build-debug/CMakeFiles/Ticketing.dir
+/Users/sojeongshin/CLionProjects/Algorithm/Ticketing/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sojeongshin/CLionProjects/Algorithm/Ticketing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
